@@ -1,0 +1,501 @@
+/*
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+
+/*
+--------------------------
+- Default Typography
+--------------------------
+*/
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Exo', sans-serif;
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .4s ease-in-out 0s;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin: 0;
+    color: #878787;
+}
+
+p img {
+    margin: 0;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* em and strong */
+
+em {
+    font: 15px/30px;
+}
+
+strong,
+b {
+    font: 15px/30px;
+}
+
+small {
+    font-size: 11px;
+    line-height: inherit;
+}
+
+
+/*  blockquotes */
+
+blockquote {
+    border-left: 0 none;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    padding-left: 40px;
+    position: relative;
+}
+
+blockquote::before {
+    color: #4e5665;
+    content: "ï„";
+    font-family: FontAwesome;
+    font-size: 36px;
+    left: 20px;
+    line-height: 0;
+    margin: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    padding: 0;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+blockquote cite:before {
+    content: "\2014 \0020";
+}
+
+blockquote cite a,
+blockquote cite a:visited {
+    color: #8B9798;
+    border: none
+}
+
+
+/* abbreviations */
+
+abbr {
+    color: #444;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: .6px;
+}
+
+abbr:hover {
+    cursor: help;
+}
+
+
+/* links */
+
+a,
+a:visited {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: 0;
+}
+
+a {
+    color: #444;
+    transition: all .4s ease-in-out 0s;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    outline: 0;
+}
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+p a,
+p a:visited {
+    line-height: inherit;
+    outline: 0;
+}
+
+/* list */
+ul,
+ol {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+ol {
+    list-style: decimal;
+}
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+    margin-left: 0px;
+}
+
+ul.square {
+    list-style: square outside;
+}
+
+ul.circle {
+    list-style: circle outside;
+}
+
+ul.disc {
+    list-style: disc outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 0;
+}
+
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+    margin-bottom: 0px;
+}
+
+li {
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+
+/* definition list */
+
+dl {
+    margin: 12px 0;
+}
+
+dt {
+    margin: 0;
+    color: #11ABB0;
+}
+
+dd {
+    margin: 0 0 0 20px;
+}
+
+button {
+    transition: all .4s ease-in-out 0s;
+}
+
+
+/*
+--------------------------
+- Custom Typography
+--------------------------
+*/
+
+/* Your Custom Typography */
+@font-face {
+    font-family: 'Apercu';
+    src: url('../webfonts/Apercu-Light.eot');
+    src: url('../webfonts/Apercu-Light.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/Apercu-Light.woff2') format('woff2'),
+        url('../webfonts/Apercu-Light.woff') format('woff'),
+        url('../webfonts/Apercu-Light.ttf') format('truetype'),
+        url('../webfonts/Apercu-Light.svg#Apercu-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('../webfonts/Apercu-Regular.eot');
+    src: url('../webfonts/Apercu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/Apercu-Regular.woff2') format('woff2'),
+        url('../webfonts/Apercu-Regular.woff') format('woff'),
+        url('../webfonts/Apercu-Regular.ttf') format('truetype'),
+        url('../webfonts/Apercu-Regular.svg#Apercu-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('../webfonts/Apercu-Medium.eot');
+    src: url('../webfonts/Apercu-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/Apercu-Medium.woff2') format('woff2'),
+        url('../webfonts/Apercu-Medium.woff') format('woff'),
+        url('../webfonts/Apercu-Medium.ttf') format('truetype'),
+        url('../webfonts/Apercu-Medium.svg#Apercu-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('../webfonts/Apercu-Bold.eot');
+    src: url('../webfonts/Apercu-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/Apercu-Bold.woff2') format('woff2'),
+        url('../webfonts/Apercu-Bold.woff') format('woff'),
+        url('../webfonts/Apercu-Bold.ttf') format('truetype'),
+        url('../webfonts/Apercu-Bold.svg#Apercu-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 
+font-family: 'Apercu';
+font-weight: bold;
+font-weight: 500;
+font-weight: normal;
+font-weight: 300;
+*/
+
+/* google fonts   */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row>*{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media screen and (min-width: 1400px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {}
+}
+@media screen and (min-width: 1400px) {}
+@media screen and (max-width: 1199px) {
+    .container {
+      max-width: 100%;
+    }
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+img{
+    max-width: 100%;
+}
+a {
+    line-height: 0;
+    font-family: 'Apercu';
+    font-weight: normal;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+span {
+    font-family: 'Apercu';
+    font-weight: normal;
+    line-height: 0;
+    display: inline-block;
+}
+a:hover,
+a:active {
+    color: var(--darkOpacity);
+}
+i{
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+p{
+    color: var(--gray3);
+    font-family: 'Apercu';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Apercu';
+    font-weight: bold;
+    color: var(--dark);
+}
+h1{
+    font-size: 64px;
+    line-height: 74px;
+}
+h2{
+    font-size: 54px;
+    line-height: 64px;
+}
+h3{
+    font-size: 44px;
+    line-height: 54px;
+}
+h4{
+    font-size: 34px;
+    line-height: 44px;
+}
+h5{
+    font-size: 24px;
+    line-height: 34px;
+}
+h6{
+    font-size: 14px;
+    line-height: 24px;
+}
+input {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Apercu';
+    font-weight: normal;
+    text-transform: capitalize;
+}
+input:focus{
+    outline: none;
+}
+/* color code */
+:root{
+    --white: #ffffff;
+    --dark: #11174F;
+    --darkOpacity: rgba(17,23,79, 0.5);
+    --primary: #00D56F;
+    --gray1: #4D6276;
+    --gray2: #798998;
+    --gray3: #A6B1BB;
+    --gray3_opacity: rgba(166, 177, 187, 0.05);
+    --mainBody: #F5F6FA;
+    --blue: rgba(91, 147, 255, 1);
+    --royal_blue: rgba(49, 114, 210, 1);
+    --alerts: rgba(56, 239, 134, 1);
+    --alerts_danger: rgba(234, 58, 61, 1);
+    --alerts_danger_opacity: rgba(234, 58, 61, 0.05);
+    --green: rgba(8, 175, 0, 1);
+    --green_opacity: rgba(8, 175, 0, 0.05);
+    --orange: rgba(255, 143, 107, 1);
+
+    /* progress bar color code  */
+    --alerts_warning: rgba(255, 214, 107, 1);
+}
+
+
+/*################## 
+--------------------------
+- typography area ends here
+--------------------------
+##################*/
